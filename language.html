@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group select {
+            height: 36px;
+        }
+        .form-group button {
+            background: linear-gradient(to left,#FF6CAB,#663DFF);
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-top: -20px;
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+
+     /* utility class */
+     .btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;   
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.btn-secondary{
+    
+   background: linear-gradient(to left,#FF6CAB,#663DFF);
+     
+    color: #fff;
+    border-radius: 1.5em;
+}
+.btn-secondary_forsecond{
+    
+   background: linear-gradient(155deg,#663dff,#aa00ff);
+     
+    color: #fff;
+    border-radius: 6em;
+}
+
+ .first_btn {
+    /* margin-top: 5rem; */
+    margin: 0 auto;
+    text-align: center;
+    height: px;
+    width: 330px;
+    font-weight: bold;
+
+   
+}
+a{
+    text-decoration: none;
+   
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="Language">Select Language</label>
+                <select id="Language" name="Language">
+                    <option value="HINDI">HINDI</option>
+                    <option value="ENGLISH">ENGLISH</option>
+                    <option value="GUJARITI">GUJARITI</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Portuguese">Portuguese</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Bengali">Bengali</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Italian">ItalianI</option>
+                    <option value="Dutch">Dutch</option>
+                    <option value="Korean">Korean</option>
+                    
+                </select>
+            </div>
+            <div class="first_btn">
+                <a href="./connectdevice.html" class="btn btn-secondary_forsecond md-heading second_a">Log In
+                </a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

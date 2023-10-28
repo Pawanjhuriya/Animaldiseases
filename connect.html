@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group select {
+            height: 36px;
+        }
+        .form-group button {
+            background: linear-gradient(to left,#FF6CAB,#663DFF);
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    
+     /* utility class */
+     .btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;   
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.btn-secondary{
+    
+   background: linear-gradient(to left,#FF6CAB,#663DFF);
+     
+    color: #fff;
+    border-radius: 1.5em;
+}
+.btn-secondary_forsecond{
+    
+   background: linear-gradient(to left,#FF6CAB,#663DFF);
+     
+    color: #fff;
+    border-radius: 6em;
+}
+
+ .first_btn {
+    /* margin-top: 5rem; */
+    margin: 0 auto;
+    text-align: center;
+    height: px;
+    width: 330px;
+    font-weight: bold;
+
+   
+}
+a{
+    text-decoration: none;
+   
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required   >
+            </div>
+            <div class="form-group">
+                <label for="ip">IP Address</label>
+                <input type="text" id="ip" name="ip"  required >
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required  >
+            </div>
+            <div class="form-group">
+                <label for="animal">Select Animal</label>
+                <select id="animal" name="animal" required>
+                    <option value="Cow">Cow</option>
+                    <option value="Buffalo">Buffalo</option>
+                    <option value="Dog">Dog</option>
+                    
+                </select>
+            </div>
+            
+                <div class="first_btn">
+                    <a href="./connected.html" class="btn btn-secondary_forsecond md-heading second_a">CONNECT
+                    </a>
+                </div>
+            
+           
+        </form>
+    </div>
+    <div class="footer">
+        <a href="./connectdevice.html">Home</a>
+        <a href="./Selfcare.html">Search</a>
+        <a href="#">Location</a>
+        <a href="#">Profile</a>
+    </div>
+</body>
+</html>

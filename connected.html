@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+    .container {
+        height: 100px;
+        text-align: center;
+        max-width: 1350px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(212, 255, 93);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+    .container1 {
+        height: 100px;
+        /* text-align: none; */
+        max-width: 550px;
+        margin: -50px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        
+    }
+    .container2 {
+        height: 450px;
+        text-align: left;
+        max-width: 550px;
+        margin: 60px auto;
+        padding: 20px;
+        /* background-color: #f5f5f5; */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        
+    }
+    .container1 h1{
+        color: #16b900;
+        text-align: center;
+    }
+   
+    
+    h1 {
+        color: #333;
+    }
+    p {
+        color: #555;
+        font-size: 1.1em;
+    }
+    .footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -100px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+     /* utility class */
+     /* .btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;   
+} */
+
+ a{
+    text-decoration: none;
+   
+}
+</style>
+</head>
+<body>
+<div class="container">
+   
+</div>
+
+<div class="first_btn">
+    <a href="./Dangeours.html" class="btn btn-secondary_forsecond md-heading second_a">
+        <div class="container1">
+        <h1>CONNECTED</h1>
+    </a>
+</div>
+
+
+</div>
+<div class="container2">
+    <h1>Mic :  ON</h1>
+    <h1>GPS : Tracking</h1>
+    <h1>Fever : <span id="feverValue"></span> F</h1>
+    <h1>Moves : Relax</h1>
+    <h1>Heartbeat : <span id="heartbeatValue"></span></h1> <!-- Added an ID for the heartbeat value -->
+    <h1>Breathing : <span id="breathingValue"></span>/50</h1>
+    <h1>Bloodpressure: 80/120 mmhg</h1>
+</div>
+<div class="footer">
+    <a href="./connectdevice.html">Home</a>
+    <a href="./Selfcare.html">Search</a>
+    <a href="#">Location</a>
+    <a href="#">Profile</a>
+</div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to generate a random number within a specified range
+        function getRandomValue(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Function to update the value of a specified element
+        function updateValue(elementId, min, max) {
+            var element = document.getElementById(elementId);
+            element.textContent = getRandomValue(min, max);
+        }
+
+        // Initial call to set the initial values
+        updateValue('feverValue', 80, 101);
+        updateValue('heartbeatValue', 48, 84);
+        updateValue('breathingValue', 26, 50);
+
+        // Set up a timer to update the values every 5 seconds
+        setInterval(function() {
+            updateValue('feverValue', 80, 101);
+            updateValue('heartbeatValue', 48, 84);
+            updateValue('breathingValue', 26, 50);
+        }, 5000);
+    });
+</script>
+</html>

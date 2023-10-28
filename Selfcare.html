@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seven Containers in One Column</title>
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 50px;
+        flex-shrink: 0;
+        background: linear-gradient(105deg, #663DFF 0.99%, #A0F 52.61%, #C49 100.05%);
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .container1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 100px;
+        background: linear-gradient(105deg, #4c4c4e 0.99%, #0029FF 52.61%, #1507B1 100.05%);
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .container1 h1 {
+        margin-top: 20px;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    @media (min-width: 400px) {
+        .container, .container1 {
+            width: 80%;
+        }
+        .footer {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+        }
+    }
+
+    @media (min-width: 500px) {
+        .container, .container1 {
+            width: 70%;
+        }
+        .footer {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+           
+        }
+    }
+
+    @media (min-width: 600px) {
+        .container, .container1 {
+            width: 60%;
+        }
+        .footer {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container, .container1 {
+            width: 70%;
+        }
+        .footer {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container, .container1 {
+            width: 50%;
+        }
+        .footer {
+            width: 0%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container1"><h1>Choose your option</h1></div>
+<div class="container"><h3>Healthy Animal</h3></div>
+<div class="container"><h3>Food Treatment</h3></div>
+<div class="container"><h3>Vaccination</h3></div>
+<div class="container"><h3> Major Diseases </h3></div>
+<div class="container"><h3>Connect To Doctor</h3></div>
+
+<div class="footer">
+    <a href="./connectdevice.html">Home</a>
+    <a href="./Selfcare.html">Search</a>
+    <a href="#">Location</a>
+    <a href="#">Profile</a>
+</div>
+
+</body>
+
+</html>

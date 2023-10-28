@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,li{
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63956;
+}
+.text-black{
+    color: #333333;
+}
+.text-grey{
+    color: #555555;
+}
+.text-light{
+    color: #f4f4f4;
+}
+
+.bg-dark{
+    background-color: #12486B;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+   margin: 0 auto;
+   
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;   
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.btn-secondary{
+    
+   background: linear-gradient(to left,#FF6CAB,#663DFF);
+     
+    color: #fff;
+    border-radius: 1.5em;
+}
+.btn-secondary_forsecond{
+    
+   background: linear-gradient(to left,#FF6CAB,#663DFF);
+     
+    color: #fff;
+    border-radius: 6em;
+}
+
+
+
+.second_section .main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.second_section .main .first_btn{
+    margin-top: 20rem;
+    
+}
+
+.second_section .main .first_btn .first_a{
+    display: flex;
+    height: 70px;
+    width: 330px;
+    align-items: center;
+    justify-content: space-between;
+}
+.second_section .main .first_btn .font_plus{
+    padding: 1px 9px;
+   background:#fff; 
+   border-radius: 60%;
+}
+.second_section .main .second_btn .second_a{
+    margin-top: 5rem;
+    text-align: center;
+    height: 85px;
+    width: 330px;
+    
+   
+}
